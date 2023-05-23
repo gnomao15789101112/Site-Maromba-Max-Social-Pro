@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olá Gente</title>
+
+    <style>
+        *{
+            height: 200;
+
+        }
+        body {
+            background-color: #d00000;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            border: 170px solid black;
+            padding: 150px 20px 20px 20px ; 
+            border-image-source: url(video/breier.png);
+            border-image-slice: 190;
+            border-image-width: 80px;
+            margin: 0px;
+            
+        }
+
+        button {
+            position: relative;
+            background-color: #fff;
+            border: none;
+            border-radius: 10%;
+            width: 180px;
+            height: 80px;
+            margin: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 1px 1px 10px black;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 70px;
+            margin-top: 20%;
+            font-weight: bolder;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            
+
+        }
+
+        button:hover {
+            background-color: #ee6262;
+            transition: 0.5s ease;
+            
+        }
+        body {
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat, repeat;
+            height: 550px;
+            background-position: center;
+            background-size: 1400px;
+            padding: 0px;
+            margin: 0px;
+            
+        
+        }
+        
+        body > p {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            -webkit-text-stroke-width: 1px; 
+            -webkit-text-stroke-color: #000;
+
+
+        }
+
+
+            
+        
+    
+        footer {
+            padding: 300px 0px 0px 0px;
+            margin: 0px;
+
+        }
+
+        img {
+            height: 700px;
+            width: 900px;
+            padding: 0px 0px 0px 0px;
+            margin: 0px;
+        }
+
+        span.desce {
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: lighter;
+            color: #fff;
+            -webkit-text-stroke-width: 2.5px; 
+            -webkit-text-stroke-color: #000;
+            padding: 0px;
+            margin: 0px;
+
+        }
+
+        p {
+            margin: 0px;
+            padding: 60px 0px 0px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>LISTA DE MELHOR HIPERTROFIA MAX!</h1>
+        <button id="sim">Abrir Lista</button>
+        <button id="site">Tenho interesse</button>
+        <button id="nao">Não quero</button>
+        <span class="desce">
+            <p>Desce
+            </p>
+        </span>
+
+
+        
+    </main>
+
+    <footer>
+        <img src="https://sexogay.club/wp-content/uploads/2020/06/Homem-de-pau-duro-fotos26.jpg" alt="">
+        
+    </footer>
+
+</body>
+<script>
+    var btn = document.getElementById("nao");
+    btn.addEventListener("mouseover", function() {
+        var x = Math.floor(Math.random() * 600);
+        var y = Math.floor(Math.random() * 600);
+        btn.style.left = x + "px";
+        btn.style.top = y + "px";
+    });
+
+    var btnSim = document.getElementById("sim");
+    btnSim.addEventListener("click", function() {
+        window.location.href = "sitep.html";
+    });
+
+    var btnSim = document.getElementById("site");
+    btnSim.addEventListener("click", function() {
+        window.location.href = "siteS.html"
+    });
+
+</script>'
+</html>
